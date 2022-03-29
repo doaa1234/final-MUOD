@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grid.Views.MainPage"
+             xmlns:local="clr-namespace:Grid.Views"
+             NavigationPage.HasNavigationBar="False"
+             BarBackgroundColor="#F2EEEE"
+             SelectedTabColor="#C4C4C4"
+             UnselectedTabColor="White"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration;assembly=Xamarin.Forms.Core">
+    <local:ProfilePage IconImageSource="user"/>
+    <local:CategoriesPage IconImageSource="home"/>
+    <local:FavoritePage IconImageSource="like"/>
+</TabbedPage>

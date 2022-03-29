@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.AssemblyInfo.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.dll
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\ref\App10.dll
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\App10.pdb
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\Views\CategoriesPage.xaml.g.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\Views\DetalisPage.xaml.g.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\Views\FavoritePage.xaml.g.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\HP\source\repos\App10\App10\App10\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
