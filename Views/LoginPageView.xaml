@@ -3,15 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppProjectMVVM.Views.LoginPageView">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{Binding PageColor}">
+        <StackLayout >
 
-            <Label x:Name="ErrorMassage" TextColor="Red" Text="{Binding ErrorMessage}"></Label>
-            <Label Text="Email"></Label>
-            <Entry x:Name="Email" Text="{Binding Email}"></Entry>
-
-            <Label Text="Password"></Label>
-            <Entry x:Name="Password" IsPassword="True" Text="{Binding Password}"></Entry>
-            <Button x:Name="LodinButton" Text="Login" Command="{Binding LoginCommand}"></Button>
 
 
         </StackLayout>
