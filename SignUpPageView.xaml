@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProjectMVVM.Views.SignUpPageView"
+             Background="	##C0C0C0">
+    
+    
+    <ContentPage.Content>
+    
+    
+            
+            <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
+            <Label Text="Sign Up" VerticalOptions="Center" FontAttributes="Bold" FontSize="40" TextColor="Gray" ></Label>
+
+            <Image Source="logodrink.jpg"  WidthRequest="160" HeightRequest="160"></Image>
+                
+                <Entry Text="{Binding Name}" Placeholder="Username" TextColor="Black" PlaceholderColor="Gray"></Entry>
+                <Entry Text="{Binding Email}" Placeholder="Email" TextColor="Black" PlaceholderColor="Gray"></Entry>
+                <Entry Text="{Binding Password}" IsPassword="True" Placeholder="Password" TextColor="Black" PlaceholderColor="Gray"></Entry>
+                <Button VerticalOptions="Center"
+                        Text="Sign Up"
+                        TextColor="Gray"
+                        BackgroundColor="Black"
+                        BorderWidth="1.5"
+                        CornerRadius="50"
+                        BorderColor="ForestGreen"
+                        Command="{Binding AddUserCommand}"></Button>
+
+            </StackLayout>
+        
+      
+    </ContentPage.Content>
+</ContentPage>
