@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             xmlns:vm="clr-namespace:MUODLast.ViewModels"
+             x:Class="MUODLast.Views.Categories">
+            <ContentPage.BindingContext>
+             <vm:CategoriesViewModel/>
+            </ContentPage.BindingContext>
+           <ContentPage.Content>
+                <Grid BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                    <Frame HasShadow="True" BackgroundColor="#C4C4C4"  CornerRadius="20">
+                        <StackLayout> 
+                            <Label Text="MUOD" TextColor="Black" FontFamily="ThemeFont" FontSize="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Line  X1="10" Y1="60" X2="400" Y2="60" Stroke="Black" StrokeThickness="1"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </Grid>
+                    <Label Grid.Row="1" Text="Drinks Category" Margin="16,20,0,14" TextColor="Black" FontSize="24" WidthRequest="231" HeightRequest="35"></Label>
+                    <CollectionView x:Name="CategoriesList" Grid.Row="2" ItemsSource="{Binding Categories}" SelectionMode="Single" 
+                         VerticalScrollBarVisibility="Never" SelectionChanged="CollectionView_SelectionChanged">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="0" HorizontalItemSpacing="14" Span="2"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout BackgroundColor="White" >
+                                    <Frame  WidthRequest="160" HeightRequest="167" IsClippedToBounds="True" HasShadow="True" Padding="0" BackgroundColor="#FFFDFD" CornerRadius="20" Margin="13,5,13,5">
+                                        <Grid Padding="10" WidthRequest="150" HeightRequest="166">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <StackLayout>
+                                                <StackLayout Padding="5">
+                                                    <Frame CornerRadius="140" 
+                                           HeightRequest="115"
+                                           WidthRequest="115"
+                                           HorizontalOptions="Center"
+                                           Padding="0"
+                                           IsClippedToBounds="True">
+                                                        <Image Aspect="Fill" Source="{Binding Image}" 
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center" />
+                                                    </Frame>
+                                                </StackLayout>
+                                                <Label Grid.Row="1" Text="{Binding CategoryName}" TextColor="#F9B522" FontFamily="ThemeFont"
+                               VerticalOptions="End" HorizontalOptions="Start"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </ContentPage.Content>
+</ContentPage>
